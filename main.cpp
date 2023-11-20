@@ -5,7 +5,7 @@ enum months {Jan = 1, Feb = 2, Mar = 3, Apr = 4, May = 5, Jun = 6, Jul = 7, Aug 
 
 int main() {
     int m;
-    while (m !=0) {
+    do {
         std::cout << "Введите номер месяца: ";
         std::cin >> m;
 
@@ -52,7 +52,7 @@ int main() {
             default:
                 std::cout << "Неправильный номер!" << std::endl;
         }
-    }
+    } while (m != 0);
 
     return 0;
 }
